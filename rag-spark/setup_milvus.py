@@ -22,7 +22,7 @@ def init_vectordb():
         FieldSchema(name='id', dtype=DataType.INT64, is_primary=True, auto_id=True),
         FieldSchema(name='stock_symbol', dtype=DataType.VARCHAR, max_length=10),
         FieldSchema(name='file_path', dtype=DataType.VARCHAR, max_length=200),
-        FieldSchema(name='chunked_text', dtype=DataType.VARCHAR, max_length=2200),
+        FieldSchema(name='chunked_text', dtype=DataType.VARCHAR, max_length=8000),
         FieldSchema(name='embedded_vectors', dtype=DataType.FLOAT_VECTOR, dim=384)
     ]
     

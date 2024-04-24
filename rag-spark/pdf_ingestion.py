@@ -29,7 +29,7 @@ sc.setLogLevel('ERROR')
 spark.conf.set("spark.sql.shuffle.partitions", 2)
 
 
-CHUNK_SIZE = 1600
+CHUNK_SIZE = 2700
 CHUNK_OVERLAP = 50
 
 # Define a UDF to extract text using PyPDF
